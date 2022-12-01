@@ -13,7 +13,7 @@ function calculateSalary(role){
         salary = "The Developer salary is : 1500€"
         break;
     case "other":
-        salary = "The default salary is :1000€"
+        salary = "The default salary is : 1000€"
         break;
  }
  return salary;
