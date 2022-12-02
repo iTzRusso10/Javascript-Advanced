@@ -1,7 +1,9 @@
 function sumUntil(maxValue) {
-    for(i = 0 ; i < maxValue; i++){
-        maxValue + i;
+    let sum = maxValue;
+    for (let i=0; i < maxValue; i++){
+        sum += i;
     }
+     return sum;
 }
     
-console.log(sumUntil(5));
+console.log(sumUntil(10));
