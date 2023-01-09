@@ -20,5 +20,5 @@ function repeatHello(callback){
 
 repeatHello(()=>{
     console.log(`Hello`)
-})
+});
 
