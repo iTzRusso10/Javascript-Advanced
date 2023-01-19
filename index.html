@@ -1,0 +1,45 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+          <div>
+            <label>First Name:</label>
+            <input type="text" class="form-input" id="firstName" value="Mario" />
+          </div>
+          <div>
+            <label>Last Name:</label>
+            <input type="text" class="form-input" id="lastName" value="Rossi" />
+          </div>
+          <div>
+            <label>Age:</label>
+            <input type="number" class="form-input" id="age" value="25" />
+          </div>
+        </form>
+      </div>
+</body>
+<script>
+let input = document.querySelectorAll("input");
+const inputValue = {};
+
+input.forEach((el) => {
+    const label = el.previousElementSibling;
+    inputValue[el.id] = {
+        label: label.textContent,
+        value: el.value
+    }
+})
+
+for(const keys in inputValue){
+    console.log(`${inputValue[keys].label} ${inputValue[keys].value}`)
+}
+</script>
+</html>
+
